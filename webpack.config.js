@@ -12,12 +12,16 @@ module.exports = {
   // in package.json add (under) "scripts":{ "build": "webpack"}
   // Now, in the CLI run: [ $ npm run build ] to build your source.
   mode: 'production',
+  //target:"es5",
   entry: { mymain: myPath.resolve(__dirname, 'src/index.js') },
   output: {
     path: myPath.resolve(__dirname, 'dist'),
     filename: '[name].bundle.js',
     clean: true,
   },
+
+  //enabling source-map from dist to src code to debug
+  devtool:'source-map',
 
   // webpack css loaders (style-loder, css-loader) config:
   // npm install --save-dev style-loader css-loader
@@ -31,6 +35,21 @@ module.exports = {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
       },
+
+      //https://webpack.js.org/loaders/babel-loader/
+      //npm install -D babel-loader @babel/core @babel/preset-env
+      {
+        test: /\.(?:js|mjs|cjs)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: [
+              ['@babel/preset-env', { targets: "defaults" }]
+            ]
+          }
+        }
+      }
     ],
   },
 
@@ -55,3 +74,4 @@ module.exports = {
   },
 
 };
+
