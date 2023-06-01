@@ -5,7 +5,7 @@
   <img src="./porag-logo.png" alt="logo" width="140"  height="auto" />
   <br/>
   <h3><b>Porag's-Awesome-Leaderboard</b></h3>
-  <h5>The Porag's-Awesome-Leaderboard web project displays scores submitted by different players. It also allows you to submit your score. All data is preserved to the external Leaderboard API service.<h5>
+  <h5>The Awesome-Leaderboard web project displays scores submitted by different players. It also allows you to submit your score. All data is preserved to the external Leaderboard API service.<h5>
 </div>
 
 
@@ -33,11 +33,11 @@
 
 # 📖 Porag's Awesome Leaderboard<a name="about-project"></a>
 
-This project **Porag's Awesome Leaderboard** is a project demonstrates the use of **HTML & CSS and Javascript Moduler development**.
+This project **Awesome Leaderboard** is a project that demonstrates the use of **HTML & CSS and Javascript Moduler development**.
 
-With External **API consumption** also demonstrates the proper use of **Async and Await** to send and receive **data**.
+With External **API consumption**, it also demonstrates the proper use of **Async and Await** to send and receive **data**.
 
-Built using **WEBPACK** following **GitFlow** and served by **WEBPACK DEV SERVER** A very simple yet powerful project. Along with dynamic modification of the DOM with Events including all the coding best practices. 
+Built using **WEBPACK** following **GitFlow** it is  very simple yet powerful project served by **WEBPACK DEV SERVER** . Along with dynamic modification of the DOM with Events including all the coding best practices. 
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -270,6 +270,3 @@ I would like to thank  [Microverse](https://www.microverse.org/) for this projec
 This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
