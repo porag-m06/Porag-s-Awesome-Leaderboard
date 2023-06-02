@@ -1,5 +1,6 @@
 import './style.css';
 import Scores from './score.js';
+import createGame from './game.js'
 
 const scoresA = new Scores();
 const sForm = document.querySelector('.form');
@@ -16,3 +17,5 @@ sForm.addEventListener('submit', () => {
   newScore.showScores();
   sForm.reset();
 });
+
+createGame();
