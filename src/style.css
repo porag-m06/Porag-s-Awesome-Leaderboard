@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    font-family: monospace,sans-serif,serif;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container{
+    flex-direction: column;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container h1 {
+    font-size: 80px;
+}
+
+.board {
+    align-items: flex-start;
+    gap: 25px;
+    padding: 5px;
+    margin: 5px;
+    width: 90%;
+}
+
+.showscore {
+    width: 40%;
+}
+
+.scorehead {
+    justify-content: space-between;
+}
+
+.scorelist ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.scorelist ul li{
+    border: 1px solid gray;
+    border-radius: 5px;
+    height: 25px;
+    margin: 7px 0;
+    padding: 0 3px;
+    
+}
+
+.scorelist span {
+    display: inline-block;
+    height: 100%;
+}
+
+.pname {
+    width: 83.5%;
+}
+
+.addscore {
+    width: 40%;
+}
+
+.form {
+    flex-direction: column;
+
+}
+
+.form input {
+    width: 96%;
+    height: 25px;
+    margin: 5px;
+}
+
+.form button {
+    height: 25px;
+    margin: 3px 5px 5px 82.5%;
+    text-align: right;
+}

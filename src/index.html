@@ -4,9 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webpack starter with babel</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Porag's Awesome Leaderboard</title>
 </head>
 <body>
-    
+    <div class="flex container">
+        <h1>Leaderboard</h1>
+        <div class="flex board">
+            <div class="showscore">
+                <div class="flex scorehead">
+                    <h2>Recent scores</h2>
+                    <button class="refresh">Refresh</button>
+                </div>
+                <div class="scorelist">
+                    <ul>
+                        <li><span class="pname">Name</span><span class="pscore">|  Score</span></li> 
+                        <li><span class="pname">Md. Porag Sarkar</span><span class="pscore">|  100</span></li> 
+                        <li><span class="pname">Md. Porag Sarkar</span><span class="pscore">|  100</span></li> 
+                        <li><span class="pname">Md. Porag Sarkar</span><span class="pscore">|  100</span></li> 
+                        <li><span class="pname">Md. Porag Sarkar</span><span class="pscore">|  100</span></li> 
+                        <li><span class="pname">Md. Porag Sarkar</span><span class="pscore">|  100</span></li> 
+                        <li><span class="pname">Md. Porag Sarkar</span><span class="pscore">|  100</span></li> 
+                    </ul>
+                </div>
+            </div>
+
+            <div class="addscore">
+                <h2>Add your score</h2>
+                <form class="form" action="">
+                    <input type="text" name="" id="" placeholder="Your name">
+                    <input type="number" name="" id="" placeholder="Your score">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
 </body>
 </html>
