@@ -22,13 +22,12 @@ if (gameId === '') {
 }
 
 const sForm = document.querySelector('.form');
-
 sForm.addEventListener('submit', (event) => {
   event.preventDefault();
+
   const playername = document.getElementById('playername').value;
   const playerscore = document.getElementById('playerscore').value;
   console.log("Before setting score, gameId is = ", gameId, "Player Name: ", playername, "score: ", playerscore);
-
   setScore(gameId, playername, playerscore);
 
   setTimeout(() => {

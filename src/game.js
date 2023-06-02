@@ -11,7 +11,6 @@ const createGame = async (nameOfTheGame) => {
 
     const jsonData = await response.json();
     console.log(jsonData);
-    
 
     return jsonData.result.split(' ')[3];
 }
@@ -48,5 +47,5 @@ const getAllScores = async (gameId) => {
     return jsonData.result;
 }
 
-module.exports = {createGame,setScore,getAllScores};
+module.exports = { createGame, setScore, getAllScores };
 //export default {createGame,setScore,getAllScores};
