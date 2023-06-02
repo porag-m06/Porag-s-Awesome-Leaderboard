@@ -93,7 +93,7 @@ Built using **WEBPACK** following **GitFlow** it is  very simple yet powerful pr
 
 > Please follow the link for a live demo.
 
-- [Porag's Awesome Leaderboard]()
+- [Porag's Awesome Leaderboard](https://porag-m06.github.io/Porag-s-Awesome-Leaderboard/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -237,7 +237,7 @@ https://...
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/porag-m06/Porag-s-Amazing-To-Do-List/issues).
+Feel free to check the [issues page](https://github.com/porag-m06/Porag-s-Awesome-Leaderboard/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -250,7 +250,7 @@ As a tech enthusiast, your support is always appreciated. If you like this proje
 
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-I would like to thank  [Microverse](https://www.microverse.org/) for this project & project guidelines.
+I would like to thank  [Microverse](https://github.com/microverseinc) for this project & project guidelines.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
