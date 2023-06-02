@@ -26,7 +26,7 @@ body {
 
 .board {
     align-items: flex-start;
-    gap: 25px;
+    gap: 65px;
     padding: 5px;
     margin: 5px;
     width: 90%;
