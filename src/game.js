@@ -1,51 +1,48 @@
 const createGame = async (nameOfTheGame) => {
-    const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/', {
-        method: 'POST',
-        body: JSON.stringify({
-            "name": nameOfTheGame
-        }),
-        headers: {
-            'Content-type': 'application/json; charset=UTF-8',
-        },
-    });
+  const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/', {
+    method: 'POST',
+    body: JSON.stringify({
+      name: nameOfTheGame,
+    }),
+    headers: {
+      'Content-type': 'application/json; charset=UTF-8',
+    },
+  });
 
-    const jsonData = await response.json();
-    console.log(jsonData);
+  const jsonData = await response.json();
 
-    return jsonData.result.split(' ')[3];
-}
+  return jsonData.result.split(' ')[3];
+};
 
 const setScore = async (gameId, name, score) => {
-    const response = await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameId}/scores/`, {
-        method: 'POST',
-        body: JSON.stringify({
-            "user": name,
-            "score": score
-        }),
+  const response = await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameId}/scores/`, {
+    method: 'POST',
+    body: JSON.stringify({
+      user: name,
+      score,
+    }),
 
-        headers: {
-            'Content-type': 'application/json; charset=UTF-8',
-        },
-    });
+    headers: {
+      'Content-type': 'application/json; charset=UTF-8',
+    },
+  });
 
-    const jsonData = await response.json();
-    console.log(jsonData);
+  const jsonData = await response.json();
 
-}
+  return jsonData;
+};
 
 const getAllScores = async (gameId) => {
-    const response = await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameId}/scores/`, {
+  const response = await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameId}/scores/`, {
 
-        headers: {
-            'Content-type': 'application/json; charset=UTF-8',
-        },
-    });
+    headers: {
+      'Content-type': 'application/json; charset=UTF-8',
+    },
+  });
 
-    const jsonData = await response.json();
-    console.log(jsonData);
+  const jsonData = await response.json();
 
-    return jsonData.result;
-}
+  return jsonData.result;
+};
 
 module.exports = { createGame, setScore, getAllScores };
-//export default {createGame,setScore,getAllScores};
