@@ -3,6 +3,8 @@
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 .flex {
@@ -12,7 +14,7 @@
 }
 
 body {
-  font-family: 'Acme','Pacifico', cursive, monospace, sans-serif, serif;
+  font-family: 'Acme', 'Pacifico', cursive, monospace, sans-serif, serif;
   color: rgb(100, 100, 100);
   overflow: hidden;
   margin: 0;
@@ -20,7 +22,6 @@ body {
   background-image: url('../assets/bg.png');
   background-repeat: no-repeat;
   background-position: center;
-
 }
 
 .container {
@@ -97,24 +98,27 @@ h2 {
   margin: 5px;
   border-style: none;
   border-radius: 3px;
-  font-family: 'Acme','Pacifico', cursive, monospace, sans-serif, serif;
+  font-family: 'Acme', 'Pacifico', cursive, monospace, sans-serif, serif;
+}
+
+button {
+  height: 25px;
+  width: 57px;
+  padding: 0 2px;
+  border-radius: 5px;
+  color: #1877f2;
+  background-color: white;
+  border: 2px solid rgb(205, 205, 205);
+  font-family: 'Acme', 'Pacifico', cursive, monospace, sans-serif, serif;
+}
+
+button:hover {
+  transform: scale(1.11);
+  color: white;
+  background-color: #1877f2;
+  border: 2px solid #1877f2;
 }
 
 .form button {
-  height: 25px;
-  margin: 6px 7px 5px 78%;
-  border: 2px solid rgb(1, 204, 255);
-  border-radius: 5px;
-  color: rgb(75, 75, 75);
-  background-color: rgb(1, 204, 255);
-  font-family: 'Acme','Pacifico', cursive, monospace, sans-serif, serif;
-}
-
-.refresh {
-  height: 25px;
-  border: 2px solid rgb(1, 204, 255);
-  border-radius: 5px;
-  color: rgb(75, 75, 75);
-  background-color: rgb(1, 204, 255);
-  font-family: 'Acme','Pacifico', cursive, monospace, sans-serif, serif;
+  margin: 6px 7px 5px 78.5%;
 }
