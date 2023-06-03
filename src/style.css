@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -9,27 +12,34 @@
 }
 
 body {
-  font-family: monospace, sans-serif, serif;
+  font-family: 'Acme','Pacifico', cursive, monospace, sans-serif, serif;
+  color: rgb(100, 100, 100);
   overflow: hidden;
   margin: 0;
+  min-height: 100vh;
+  background-image: url('../assets/bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+
 }
 
 .container {
+  padding-top: 230px;
   flex-direction: column;
   max-width: 1200px;
   margin: auto;
 }
 
-.container h1 {
-  font-size: 80px;
-}
-
 .board {
   align-items: flex-start;
-  gap: 65px;
+  gap: 100px;
   padding: 5px;
   margin: 5px;
   width: 90%;
+}
+
+h2 {
+  font-size: 36px;
 }
 
 .showscore {
@@ -85,10 +95,26 @@ body {
   width: 96%;
   height: 25px;
   margin: 5px;
+  border-style: none;
+  border-radius: 3px;
+  font-family: 'Acme','Pacifico', cursive, monospace, sans-serif, serif;
 }
 
 .form button {
   height: 25px;
-  margin: 3px 5px 5px 82.5%;
-  text-align: right;
+  margin: 6px 7px 5px 78%;
+  border: 2px solid rgb(1, 204, 255);
+  border-radius: 5px;
+  color: rgb(75, 75, 75);
+  background-color: rgb(1, 204, 255);
+  font-family: 'Acme','Pacifico', cursive, monospace, sans-serif, serif;
+}
+
+.refresh {
+  height: 25px;
+  border: 2px solid rgb(1, 204, 255);
+  border-radius: 5px;
+  color: rgb(75, 75, 75);
+  background-color: rgb(1, 204, 255);
+  font-family: 'Acme','Pacifico', cursive, monospace, sans-serif, serif;
 }
